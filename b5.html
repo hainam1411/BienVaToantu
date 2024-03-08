@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Caculator</th>
+    </tr>
+    <tr>
+        <td><input id="num1" type="number">
+            <input id="num2" type="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <button id="btn1" onclick="cong()">Add(+)</button>
+        <button id="btn2" onclick="tru()">Sub(-)</button>
+        <button id="btn3" onclick="nhan()">Multi(*)</button>
+        <button id="btn4" onclick="chia()">Div(/)</button>
+        </td>
+    </tr>
+
+</table>
+<p>Ket qua la: </p><div id="result"></div>
+<script>
+
+    function cong(){
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+    let result = a+b;
+    document.getElementById("result").innerHTML= result;
+    console.log("result");
+    }
+    function tru(){
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let result = a-b;
+        document.getElementById("result").innerHTML= result;
+        console.log("result");
+    }
+    function nhan(){
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let result = a*b;
+        document.getElementById("result").innerHTML= result;
+        console.log('result');
+    }
+    function chia(){
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let result = a/b;
+        document.getElementById("result").innerHTML= result;
+        console.log('result');
+    }
+</script>
+</body>
+</html>

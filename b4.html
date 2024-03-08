@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀi 4</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="nhap"></td>
+        <td><select>
+            <option id="vnd">VND</option>
+            <option id="usd">USD</option>
+        </select></td>
+        <td><select>
+            <option id="vnd">VND</option>
+            <option id="usd">USD</option>
+        </select></td>
+        <td><button id="btn" style="background-color: violet" onclick="click()" >Convert</button></td>
+    </tr>
+</table>
+<div id="ExchangeRate"></div>
+<script>
+    const rate = 23000;
+    function click(){
+    let a = document.getElementById("vnd").value;
+    let b = document.getElementById("usd").value;//
+    }
+</script>
+</body>
+</html>
